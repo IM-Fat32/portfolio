@@ -1,0 +1,111 @@
+.home-page__wrapper {
+  margin-left: 4.5rem;
+  overflow: hidden;
+}
+
+.home-page__wrapper .front-image__div {
+  background-image: url("../images/bgc.jpg");
+  height: 90vh;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.home-page__wrapper .front-image__div .main-text {
+  margin-top: 0;
+  padding: 1em;
+  text-transform: uppercase;
+  font-size: 7vw;
+  text-align: center;
+  color: white;
+}
+
+.home-page__wrapper .front-image__div h3 {
+  color: white;
+  text-align: center;
+  font-size: 2.5vw;
+  margin-top: -2em;
+}
+
+.home-page__wrapper .title__h4 {
+  text-align: center;
+  font-size: 2.5rem;
+  padding-bottom: 1em;
+  margin: 0;
+}
+
+.home-page__wrapper .about__wrapper {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5rem;
+}
+
+.home-page__wrapper .about__wrapper p {
+  width: 70%;
+  margin: auto;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.home-page__wrapper .skills__wrapper {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5rem;
+  background-color: #263238;
+  color: white;
+}
+
+.home-page__wrapper .skills__wrapper .item__wrapper {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 1s;
+  transition: 1s;
+  padding: 1rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  width: 80%;
+  margin: auto;
+  -webkit-transform: translateX(-200%);
+          transform: translateX(-200%);
+}
+
+.home-page__wrapper .skills__wrapper .item__wrapper:nth-of-type(2n + 1) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+}
+
+.home-page__wrapper .skills__wrapper .item__wrapper .icon__wrapper {
+  font-size: 10vw;
+}
+
+.home-page__wrapper .skills__wrapper .item__wrapper .text__wrapper {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 1rem 2rem;
+  width: 50%;
+}
+
+.home-page__wrapper .skills__wrapper .item__wrapper .text__wrapper h5 {
+  font-size: 1.1em;
+}
+
+.home-page__wrapper .skills__wrapper .item__wrapper.visible {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+@media only screen and (max-width: 600px) {
+  .home-page__wrapper {
+    margin-left: 0;
+  }
+}
+/*# sourceMappingURL=HomePage.css.map */

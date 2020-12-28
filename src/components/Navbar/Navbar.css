@@ -1,0 +1,139 @@
+.navbar {
+  height: 100vh;
+  width: 4.5rem;
+  cursor: pointer;
+  -webkit-transition: .4s;
+  transition: .4s;
+  position: fixed;
+  z-index: 999;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.navbar:hover {
+  width: 16rem;
+}
+
+.navbar:hover > .navbar-nav .nav-item .link-text {
+  display: block;
+}
+
+.navbar .navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background-color: #000a12;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .navbar-nav .nav-title {
+  width: 100%;
+  color: white;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.navbar .navbar-nav .nav-title .nav-link {
+  font-size: 1.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 5rem;
+  padding: 0  1.5rem;
+}
+
+.navbar .navbar-nav .nav-item {
+  width: 100%;
+  color: white;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+}
+
+.navbar .navbar-nav .nav-item:hover {
+  background-color: #263238;
+}
+
+.navbar .navbar-nav .nav-item:nth-last-child(2) {
+  margin-top: auto;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 5rem;
+  margin-left: 1.5rem;
+}
+
+.navbar .navbar-nav .nav-item .link-text {
+  display: none;
+  margin-left: 2rem;
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    top: calc(100% - 5rem);
+    width: 100vw;
+    height: 5rem;
+  }
+  .navbar:hover {
+    width: 100vw;
+  }
+  .navbar:hover > .navbar-nav .nav-item .link-text {
+    display: none;
+  }
+  .navbar .navbar-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .navbar .navbar-nav .nav-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navbar .navbar-nav .nav-item .nav-link {
+    margin: 0;
+  }
+  .navbar .navbar-nav .nav-title {
+    display: none;
+  }
+  .navbar .navbar-nav .link-text {
+    display: none;
+  }
+}
+/*# sourceMappingURL=Navbar.css.map */

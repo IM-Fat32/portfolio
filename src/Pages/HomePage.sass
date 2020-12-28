@@ -1,0 +1,78 @@
+$backgroundImage : '../images/bgc.jpg'
+
+.home-page__wrapper
+  margin-left: 4.5rem
+  overflow: hidden
+
+  .front-image__div
+    background-image: url($backgroundImage)
+    height: 90vh
+    background-repeat:
+    background-size: cover
+    position: relative
+    background-attachment: fixed
+
+    .main-text
+      margin-top: 0
+      padding: 1em
+      text-transform: uppercase
+      font-size: 7vw
+      text-align: center
+      color: white
+
+    h3
+      color: white
+      text-align: center
+      font-size: 2.5vw
+      margin-top: -2em
+
+  .title__h4
+    text-align: center
+    font-size: 2.5rem
+    padding-bottom: 1em
+    margin: 0
+
+  .about__wrapper
+    box-sizing: border-box
+    padding: 5rem
+    p
+      width: 70%
+      margin: auto
+      font-size: 1.1rem
+      text-align: center
+
+  .skills__wrapper
+    box-sizing: border-box
+    padding: 5rem
+    background-color: #263238
+    color: white
+    .item__wrapper
+      box-sizing: border-box
+      transition: 1s
+      padding: 1rem 2rem
+      display: flex
+      flex-direction: row-reverse
+      width: 80%
+      margin: auto
+      transform: translateX(-200%)
+
+      &:nth-of-type(2n + 1)
+        flex-direction: row
+        transform: translateX(200%)
+
+      .icon__wrapper
+        font-size: 10vw
+
+      .text__wrapper
+        box-sizing: border-box
+        padding: 1rem 2rem
+        width: 50%
+        h5
+          font-size: 1.1em
+
+    .item__wrapper.visible
+      transform: translateX(0)
+
+@media only screen and (max-width: 600px)
+  .home-page__wrapper
+    margin-left: 0
