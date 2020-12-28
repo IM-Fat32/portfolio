@@ -9,6 +9,7 @@ import {BrowserRouter as Router,
 import HomePage from './Pages/HomePage.jsx';
 
 import Navbar from './components/Navbar/Navbar.jsx';
+import Footer from './components/Footer/Footer.jsx';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Switch>
         <Route  exact path="/" component={HomePage}/>
         </Switch>
+        <Footer/>
       </Router>
     </div>
   );

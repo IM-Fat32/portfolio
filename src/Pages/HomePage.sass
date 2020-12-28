@@ -51,7 +51,9 @@ $backgroundImage : '../images/bgc.jpg'
       transition: 1s
       padding: 1rem 2rem
       display: flex
+      flex-wrap: wrap
       flex-direction: row-reverse
+      align-items: center
       width: 80%
       margin: auto
       transform: translateX(-200%)
@@ -61,11 +63,12 @@ $backgroundImage : '../images/bgc.jpg'
         transform: translateX(200%)
 
       .icon__wrapper
-        font-size: 10vw
+        font-size: 9rem
+        padding: 2rem
 
       .text__wrapper
         box-sizing: border-box
-        padding: 1rem 2rem
+        padding: 2rem 2rem
         width: 50%
         h5
           font-size: 1.1em
@@ -76,3 +79,62 @@ $backgroundImage : '../images/bgc.jpg'
 @media only screen and (max-width: 600px)
   .home-page__wrapper
     margin-left: 0
+
+@media screen and ( max-width:  1284px)
+  .home-page__wrapper
+
+    .front-image__div
+      display: flex
+      flex-direction: column
+      justify-content: center
+
+    .skills__wrapper
+      padding: 5rem 1rem
+      .item__wrapper
+        width: 100%
+
+        .icon__wrapper
+          max-width: 110px
+
+        .text__wrapper
+          width: 70%
+
+@media screen and (max-width:  640px)
+  .home-page__wrapper
+    .about__wrapper
+      p
+        width: 90%
+    .skills__wrapper
+      padding: 5rem 1rem
+      .item__wrapper
+        width: 100%
+        justify-content: center
+
+        .icon__wrapper
+          max-width: 150px
+
+        .text__wrapper
+          margin-top: -4rem
+          width: 100%
+          text-align: center
+
+@media screen and ( max-width:  420px)
+  .home-page__wrapper
+    .about__wrapper
+      p
+        width: 100%
+        padding: 0
+
+    .skills__wrapper
+      padding: 5rem 1rem
+      .item__wrapper
+        width: 100%
+        justify-content: center
+
+        .icon__wrapper
+          max-width: 150px
+
+        .text__wrapper
+          margin-top: -4rem
+          width: 90%
+          text-align: center
