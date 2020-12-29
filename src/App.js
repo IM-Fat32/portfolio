@@ -6,7 +6,7 @@ import {BrowserRouter as Router,
 } from 'react-router-dom';
 
 
-import HomePage from './Pages/HomePage.jsx';
+import HomePage from './Pages/HomePage/HomePage.jsx';
 
 import Navbar from './components/Navbar/Navbar.jsx';
 import Footer from './components/Footer/Footer.jsx';

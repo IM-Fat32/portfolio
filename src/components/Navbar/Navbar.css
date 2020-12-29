@@ -24,7 +24,7 @@
   padding: 0;
   margin: 0;
   height: 100%;
-  background-color: #000a12;
+  background-color: #062f4f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,7 +79,7 @@
 }
 
 .navbar .navbar-nav .nav-item:hover {
-  background-color: #263238;
+  background-color: #457b9d;
 }
 
 .navbar .navbar-nav .nav-item:nth-last-child(2) {
@@ -100,7 +100,7 @@
   font-size: 1rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .navbar {
     top: calc(100% - 5rem);
     width: 100vw;
