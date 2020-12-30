@@ -10,6 +10,15 @@
   font-weight: 400;
 }
 
+.projects__wrapper .items__container {
+  padding: 0;
+}
+
+.projects__wrapper .items__container ul {
+  padding: 0;
+  margin: 0;
+}
+
 .projects__wrapper .items__container li {
   position: relative;
   left: 50%;
@@ -97,7 +106,13 @@
 
 @media screen and (max-width: 599px) {
   .projects__wrapper .items__container li {
-    width: 350px;
+    width: 90%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .projects__wrapper .items__container li::before {
+    display: none;
   }
 }
 /*# sourceMappingURL=Projects.css.map */
