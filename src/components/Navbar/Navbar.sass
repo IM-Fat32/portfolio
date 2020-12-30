@@ -1,0 +1,89 @@
+.navbar
+  height: 100vh
+  width: 4.5rem
+  cursor: pointer
+  transition: .4s
+  position: fixed
+  z-index: 999
+  overflow: hidden
+  top: 0
+  left: 0
+  &:hover
+    width: 16rem
+  &:hover >  .navbar-nav .nav-item .link-text
+    display: block
+  &:hover > .navbar-nav .nav-title .nav-link
+    transform: rotate(-180deg)
+
+  .navbar-nav
+    list-style: none
+    padding: 0
+    margin: 0
+    height: 100%
+    background-color: #062f4f
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    .nav-title
+      width: 100%
+      color: white
+      font-size: 1.5rem
+      display: flex
+      align-items: center
+      text-decoration: none
+      display: flex
+      justify-content: flex-end
+      .nav-link
+        font-size: 1.5rem
+        align-items: center
+        height: 5rem
+        padding: 0  1.5rem
+        transition: .4s
+
+    .nav-item
+      width: 100%
+      color: white
+      font-size: 1.5rem
+      display: flex
+      align-items: center
+      text-decoration: none
+      transition: background-color .3s
+      &:hover
+        background-color: #457b9d
+      &:nth-last-child(2)
+        margin-top: auto
+      .nav-link
+        align-items: center
+        height: 5rem
+        margin-left: 1.5rem
+
+      .link-text
+        display: none
+        margin-left: 2rem
+        font-size: 1rem
+
+@media only screen and (max-width: 800px)
+  .navbar
+    top: calc(100% - 5rem)
+    width: 100vw
+    height: 5rem
+    &:hover
+      width: 100vw
+    &:hover >  .navbar-nav .nav-item .link-text
+      display: none
+
+    .navbar-nav
+      flex-direction: row
+      .nav-item
+        display: flex
+        justify-content: center
+
+        .nav-link
+          margin: 0
+
+      .nav-title
+        display: none
+
+      .link-text
+        display: none
