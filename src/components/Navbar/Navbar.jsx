@@ -24,10 +24,6 @@ const Navbar = () => {
           <FontAwesomeIcon className="nav-link" icon={faFolder} />
           <span className="link-text">Projects</span>
         </NavLink>
-        <NavLink to="/contact" className="nav-item">
-          <FontAwesomeIcon className="nav-link" icon={faEnvelope} />
-          <span className="link-text">Contact</span>
-        </NavLink>
         <NavLink to="/" className="nav-item">
           <FontAwesomeIcon className="nav-link" icon={faLinkedin} />
           <span className="link-text">Linkedin</span>

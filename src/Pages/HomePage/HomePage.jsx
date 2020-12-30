@@ -21,6 +21,7 @@ const HomePage = () => {
   useEffect(() => {
     const items = document.querySelectorAll(".item__wrapper");
     handleEvents(items);
+    window.scrollTo(0, 0);
   });
 
   return (

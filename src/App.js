@@ -7,6 +7,7 @@ import {BrowserRouter as Router,
 
 
 import HomePage from './Pages/HomePage/HomePage.jsx';
+import ProjetsPage from './Pages/ProjectsPage/Projects.jsx';
 
 import Navbar from './components/Navbar/Navbar.jsx';
 import Footer from './components/Footer/Footer.jsx';
@@ -18,6 +19,7 @@ function App() {
         <Navbar/>
         <Switch>
         <Route  exact path="/" component={HomePage}/>
+        <Route  exact path="/projects" component={ProjetsPage}/>
         </Switch>
         <Footer/>
       </Router>

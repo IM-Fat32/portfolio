@@ -5,7 +5,7 @@ import Contact from '../Contact/Contact.jsx';
 const Footer = () => {
   return (
     <>
-      <div className="footer__wrapper">
+      <div id="footer__wrapper">
         <Contact />
       </div>
       <div className="rights">
