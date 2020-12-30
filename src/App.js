@@ -5,7 +5,6 @@ import {BrowserRouter as Router,
   Route,
 } from 'react-router-dom';
 
-
 import HomePage from './Pages/HomePage/HomePage.jsx';
 import ProjetsPage from './Pages/ProjectsPage/Projects.jsx';
 
@@ -17,10 +16,10 @@ function App() {
     <div className="App">
       <Router>
         <Navbar/>
-        <Switch>
-        <Route  exact path="/" component={HomePage}/>
-        <Route  exact path="/projects" component={ProjetsPage}/>
-        </Switch>
+          <Switch>
+            <Route  exact path="/" component={HomePage} />
+            <Route  exact path="/projects" component={ProjetsPage}/>
+          </Switch>
         <Footer/>
       </Router>
     </div>

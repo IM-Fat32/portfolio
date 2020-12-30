@@ -9,8 +9,6 @@ const HomePage = () => {
   const handleEvents = (items) => {
     window.addEventListener("scroll", () => {
       items.forEach(el => {
-        console.log(`offsetTop: ${el.offsetTop}`)
-        console.log(`window.scrollY : ${window.scrollY}`)
         if (window.scrollY + 700 >= el.offsetTop) {
           el.classList.add("visible");
         }

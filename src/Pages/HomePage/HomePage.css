@@ -1,6 +1,8 @@
 .home-page__wrapper {
   margin-left: 4.5rem;
   overflow: hidden;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .home-page__wrapper .front-image__div {

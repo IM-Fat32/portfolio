@@ -12,6 +12,8 @@
     width: 16rem
   &:hover >  .navbar-nav .nav-item .link-text
     display: block
+  &:hover > .navbar-nav .nav-title .nav-link
+    transform: rotate(-180deg)
 
   .navbar-nav
     list-style: none
@@ -37,6 +39,7 @@
         align-items: center
         height: 5rem
         padding: 0  1.5rem
+        transition: .4s
 
     .nav-item
       width: 100%

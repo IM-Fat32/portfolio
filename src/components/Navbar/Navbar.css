@@ -19,6 +19,11 @@
   display: block;
 }
 
+.navbar:hover > .navbar-nav .nav-title .nav-link {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
 .navbar .navbar-nav {
   list-style: none;
   padding: 0;
@@ -61,6 +66,8 @@
           align-items: center;
   height: 5rem;
   padding: 0  1.5rem;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
 .navbar .navbar-nav .nav-item {
