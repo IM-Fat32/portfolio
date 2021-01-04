@@ -24,7 +24,7 @@ const ProjetsPage = () => {
           <li>
             <div className="item">
               <p>Simple game</p>
-              <a href="/#">
+              <a href="https://im-fat32.github.io/">
                 <button className="button">Check</button>
               </a>
             </div>
